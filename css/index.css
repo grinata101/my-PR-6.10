@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  max-width: 100%;
 }
 
 /* .article_text {
@@ -57,7 +58,7 @@ img {
 }
 
 body {
-  font-family: Müller, Arial, Verdana, sans-serif;
+  font-family: 'Muller', Arial, Verdana, sans-serif;
 }
 
 .container {
@@ -125,6 +126,7 @@ body {
   border-radius: 10px;
   border: 1px solid;
   padding: 13px 20px 13px 20px;
+  font-size: 16px;
   color: #cc9933;
   background: #fff;
 }
@@ -176,9 +178,7 @@ body {
   bottom: 103px;
 }
 
-.title-small,
-.title-big {
-  font-family: Muller;
+.title-small {
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
@@ -192,7 +192,6 @@ body {
 
 .special-offers-list {
   left: 45px;
-  font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -209,6 +208,15 @@ body {
   left: 35px;
   top: 202px;
   color: #F0BF5F;
+}
+
+.offers-link,
+.service-a {
+  background-image: url(../img/angle-bracket.svg);
+  background-position: right center;
+  padding-right: 20px;
+  background-size: 14px 19px;
+  background-repeat: no-repeat;
 }
 
 .offers-img {
@@ -235,7 +243,7 @@ img-big {
   display: block;
   position: absolute;
   width: auto;
-    height: 545px;
+  height: 545px;
 }
 
 .title-big,
@@ -249,6 +257,11 @@ img-big {
 .title-big {
   padding-top: 212px;
   padding-left: 45px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .price {
@@ -267,31 +280,204 @@ img-big {
   margin-bottom: 70px;
 }
 
-.h2-about-us {
+.h2-about-us,
+.h2-section-services,
+.h2-advantages,
+.h2-accommodation,
+.h2-check-boxes,
+.h2-contacts {
   padding-left: 45px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
 }
 
 .about-us-text {
   text-align: justify;
-  font: Muller;
-  font-weight : 400;
-  size: 16px;
-  line-height: 32px;
 }
 
-.section-services {
-  max-width: 1170px;
+.about-us-text,
+.service-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
 }
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
 }
+
 
 .block-li-ul-1 {
   margin-right: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  max-width: 50%;
 }
 
 .block-ul {
   width: 573px;
-height: 330px;
+  height: 330px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #FFFFFF;
 }
+
+.block-li-ul-1:nth-child(2n) {
+  margin-right: 0;
+}
+
+.service-img {
+  margin-bottom: 26px;
+}
+
+.service-a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #CC9933;
+}
+
+.service-p,
+.service-a {
+  padding-left: 45px
+}
+
+.service-p {
+  margin: 0;
+}
+
+.service-list {
+  max-width: 430px;
+}
+
+.advantages {
+  width: 1170px;
+  height: 634px;
+  margin-bottom: 70px;
+}
+
+.advantages-block-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-block {
+  height: 276px;
+  width: 276px;
+  margin-right: 22px;
+  margin-bottom: 22px;
+  padding-left: 45px;
+  /* padding-top: 116px; */
+  border-radius: 15px;
+  background: #FFFFFF;
+}
+
+.advantages-block:nth-child(4n) {
+  margin-right: 0;
+}
+
+.advantages-svg {
+  width: 64px;
+  height: 66px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.icon1 {
+  background-image: url(../img/icon1.jpg);
+}
+
+.icon2 {
+  background-image: url(../img/icon2.jpg);
+}
+
+.icon3 {
+  background-image: url(../img/icon3.jpg);
+}
+
+.icon4 {
+  background-image: url(../img/icon4.jpg);
+}
+
+.icon5 {
+  background-image: url(../img/icon5.jpg);
+}
+
+.icon6 {
+  background-image: url(../img/icon6.jpg);
+}
+
+.icon7 {
+  background-image: url(../img/icon7.jpg);
+}
+
+.icon8 {
+  background-image: url(../img/icon8.jpg);
+}
+
+.advantages-text {
+  width: 189px;
+  height: 128px;
+}
+
+.container-accommodation-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  margin-bottom: 32px;
+}
+
+.accommodation-price {
+  display: contents;
+}
+
+.accommodation-star {
+  margin-left: 52px;
+}
+
+.accommodation-li-block {
+  margin-right: 24px;
+  margin-bottom: 24px;
+  width: 374px;
+  height: 440px;
+  border-radius: 15px;
+  background-color: #ffff;
+}
+
+.accommodation-li-block:nth-child(3n) {
+  margin-right: 0;
+}
+
+.accommodation-text {
+  padding-left: 45px;
+}
+
+.accommodation-big-img {
+  position: absolute;
+}
+
+.accommodation-big-text {
+  position: absolute;
+  padding-top: 373px;
+  padding-left: 54px;
+  /* color: #fff; */
+}
+
+.accommodation-big-text-a {
+    background-image: url(../img/angle-bracket-white.svg);
+    background-repeat: no-repeat;
+    color: #fff;
+    background-position: right;
+    padding-right: 18px;
+}
+
