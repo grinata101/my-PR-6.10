@@ -322,7 +322,7 @@ img-big {
 .block-ul {
   width: 573px;
   height: 330px;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px;
   background-color: #FFFFFF;
 }
 
@@ -481,3 +481,10 @@ img-big {
     padding-right: 18px;
 }
 
+.button:hover {
+  background: #CC9933;
+  color: #fff;
+}
+.button:active {
+  background: #A47312;
+}
