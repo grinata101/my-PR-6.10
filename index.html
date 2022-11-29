@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="container">
+<body>
   <header>
-    <div class="header-container">
-      <div class="header-contacts">
+    <div class="container">
+      <div class="header__top">
 
         <div class="logo-tel">
           <a class="header-logo"><img class="logo" src="img/logo.png" alt="Lagoona"></a>
@@ -22,526 +22,529 @@
 
         <div class="arrow-personal-area">
           <a class="personal-area" href="personal-area">
-            <img class="personal-img" src="img/arrow.svg" alt="стрелка"> Личный кабинет</a>
+
+            <svg class="personal-img" id="arrow-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.59 7.41L15.17 11H1V13H15.17L11.58 16.59L13 18L19 12L13 6L11.59 7.41ZM20 6V18H22V6H20Z"
+                fill="#CC9933" />
+            </svg>
+
+            Личный кабинет
+          </a>
         </div>
+
       </div>
 
-      <nav class="nav-menu">
-        <ul class="nav-menu-list">
-          <li><a class="menu" href="#about-us">О нас</a></li>
-          <li><a class="menu" href="#section-services">Услуги</a></li>
-          <li><a class="menu" href="#advantages">Преимущества</a></li>
-          <li><a class="menu" href="#accommodation">Размещение</a></li>
-          <li><a class="menu" href="#blog">Блог</a></li>
-          <li><a class="menu" href="#contacts">Контакты</a></li>
-        </ul>
+      <div class="header__bottom">
+        <nav class="nav-menu">
+          <ul class="nav-menu-list">
+            <li class="nav-menu-list-item"><a class="menu" href="#about-us">О нас</a></li>
+            <li class="nav-menu-list-item"><a class="menu" href="#section-services">Услуги</a></li>
+            <li class="nav-menu-list-item"><a class="menu" href="#advantages">Преимущества</a></li>
+            <li class="nav-menu-list-item"><a class="menu" href="#accommodation">Размещение</a></li>
+            <li class="nav-menu-list-item"><a class="menu" href="#blog">Блог</a></li>
+            <li class="nav-menu-list-item"><a class="menu" href="#contacts">Контакты</a></li>
+          </ul>
 
-        <div class="button-callback">
-
-          <button id="tour" class="button-choice button">
+          <button id="tour" class="button-tour button">
             <span>Хочу тур</span>
           </button>
 
-          <a class="menu-callback" href="tel:#">Обратный&nbsp;звонок</a>
-        </div>
-      </nav>
+          <a class="menu-callback" href="tel:#">
+            Обратный звонок
+          </a>
+        </nav>
+      </div>
+
     </div>
   </header>
 
   <main class="main">
-    <section class="section-offers">
-      <div class="container-offers">
-        <h1 class="offers-title">Спецпредложения</h1>
-        <div class="offers-left-small">
-          <div class="offers-left">
+    <h1 class="vissually-hidden">Lagoona</h1>
 
-            <div class="offers-small">
-              <img class="offers-img" alt="beach chairs, sun umbrellas near the pool" src="img/img1.png">
-              <h2 class="offers-text title-small">Мальдивские <br> острова</h2>
+    <section class="special">
+      <div class="container">
+        <h2 class="h2-special__content">Спецпредложение</h2>
+        <div class="special__content">
+          <div class="special__block__left special__block">
+
+            <article class="special__item item-left item-left-img1">
+              <h3 class="special__item__h">Мальдивские острова</h3>
               <p class="offers-text special-offers-list">
                 от 55 000
               </p>
-              <a class="offers-text offers-link" href="#">Подробнее</a>
-            </div>
+              <a class="offers-text offers-link" href="#">
+                Подробнее
+                <svg class="angle-bracket-svg" width="11" height="18" viewBox="0 0 11 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2" />
+                </svg>
+              </a>
+            </article>
 
-            <div class="offers-small">
-              <img class="offers-img" alt="pool" src="img/img3.png">
-              <h2 class="offers-text title-small">Горящий <br> тур на остров Крит</h2>
+            <article class="special__item item-left item-left-img2">
+              <h3 class="special__item__h">Горящий <br> тур на&nbsp;остров Крит</h3>
               <p class="offers-text special-offers-list">
                 от 30 000
               </p>
-              <a class="offers-text offers-link" href="#">Подробнее</a>
-            </div>
+              <a class="offers-text offers-link" href="#">
+                Подробнее
+                <svg class="angle-bracket-svg" width="11" height="18" viewBox="0 0 11 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2" />
+                </svg>
+              </a>
+            </article>
 
           </div>
 
-          <div class="offers-big">
-            <div class="titel-big-div">
-              <img class="offers-img offers-img-big" alt="luxury-rooms" src="img/img2.png">
-              <h2 class="title-big">Номера <br> категории <br> люкс</h2>
-              <p class="price special-offers-list">от 5 000</p>
-              <a class="offers-link offers-link-big" href="#">Подробнее</a>
-            </div>
+          <div class="special__block__right special__block">
+
+            <article class="special__item item-right">
+              <h3 class="special__item__h__big">Номера категории люкс</h3>
+              <p class="price special-offers-list-p-big">от 5 000</p>
+              <a class="offers-link special-offers-link-a-big" href="#">
+                Подробнее
+                <svg class="angle-bracket-svg" width="11" height="18" viewBox="0 0 11 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2" />
+                </svg>
+              </a>
+            </article>
+
           </div>
+
         </div>
+
       </div>
     </section>
 
-
     <section class="about-us">
-      <h2 id="about-us" class="h2-about-us">О нас</h2>
-      <p class="about-us-text">Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации
-        влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным
-        потребностям. Идейные соображения высшего порядка, а&nbsp;также дальнейшее развитие различных форм деятельности
-        представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.
-        Равным образом сложившаяся структура организации требуют определения и&nbsp;уточнения существенных финансовых
-        и&nbsp;административных условий.</p>
+      <div class="container">
+        <h2 id="about-us" class="h2-about-us">О нас</h2>
+        <p class="about-us-text">Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации
+          влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным
+          потребностям. Идейные соображения высшего порядка, а&nbsp;также дальнейшее развитие различных форм
+          деятельности
+          представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным
+          потребностям.
+          Равным образом сложившаяся структура организации требуют определения и&nbsp;уточнения существенных финансовых
+          и&nbsp;административных условий.
+        </p>
+      </div>
     </section>
 
     <section id="section-services" class="section-services">
-      <h2 class="h2-section-services">Услуги</h2>
+      <div class="container">
+        <h2 class="h2-section-services">Услуги</h2>
 
-      <ul class="services-list">
+        <ul class="services-list">
 
-        <li class="block-li-ul-1">
-          <ul class="block-ul">
-            <li class="list">
-              <img class="service-img" alt="two glasses and a sea view" src="img/img4.png">
-            </li>
-            <li class="service-list">
-              <a class="service-a" href="#">Эксклюзивное обслуживание</a>
-            </li>
-            <li class="service-list">
-              <p class="service-p">Равным образом постоянный количественный рост и&nbsp;сфера нашей активности</p>
-            </li>
-          </ul>
-        </li>
+          <li class="block-li-ul-1 block-li-img1">
+            <a class="service-a" href="#">
+              Эксклюзивное обслуживание
+              <svg class="service-angle-bracket-svg" width="11" height="18" viewBox="0 0 11 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2" />
+              </svg>
+            </a>
+            <p class="service-p">
+              Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
+            </p>
+          </li>
 
-        <li class="block-li-ul-1">
-          <ul class="block-ul">
-            <li class="">
-              <img class="service-img" alt="two glasses and a sea view" src="img/img5.png">
-            </li>
-            <li class="service-list">
-              <a class="service-a" href="#">Аренда банкетных залов</a>
-            </li>
-            <li class="service-list">
-              <p class="service-p">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
-              </p>
-            </li>
-          </ul>
-        </li>
+          <li class="block-li-ul-1 block-li-img2">
+            <a class="service-a" href="#">
+              Аренда банкетных залов
+              <svg class="service-angle-bracket-svg" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2" />
+              </svg>
+            </a>
+            <p class="service-p">
+              Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+            </p>
+          </li>
 
-        <li class="block-li-ul-1">
-          <ul class="block-ul">
-            <li class="">
-              <img class="service-img" alt="pool" src="img/img6.png">
-            </li>
-            <li class="service-list">
-              <a class="service-a" href="#">Сауны, бассейны, бани, фитнес-залы</a>
-            </li>
-            <li class="service-list">
-              <p class="service-p">Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию
-                позиции</p>
-            </li>
-          </ul>
-        </li>
+          <li class="block-li-ul-1 block-li-img3">
+            <a class="service-a" href="#">
+              Сауны, бассейны, бани, фитнес-залы
+              <svg class="service-angle-bracket-svg" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2" />
+              </svg>
+            </a>
+            <p class="service-p">
+              Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
+            </p>
+          </li>
 
-        <li class="block-li-ul-1">
-          <ul class="block-ul">
-            <li class="">
-              <img class="service-img" alt="cars" src="img/img7.png">
-            </li>
-            <li class="service-list">
-              <a class="service-a" href="#">Охраняемые автомобильные стоянки</a>
-            </li>
-            <li class="service-list">
-              <p class="service-p">Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию
-                позиции</p>
-            </li>
-          </ul>
-        </li>
+          <li class="block-li-ul-1 block-li-img4">
+            <a class="service-a" href="#">
+              Охраняемые автомобильные стоянки
+              <svg class="service-angle-bracket-svg" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2" />
+              </svg>
+            </a>
+            <p class="service-p">
+              Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
+            </p>
+          </li>
 
-      </ul>
+        </ul>
+      </div>
     </section>
 
-
-
     <section id="advantages" class="advantages">
-      <h2 class="h2-advantages">Преимущества</h2>
-      <ul class="advantages-block-ul">
-        <li class="advantages-block">
-          <ul class="advantages-block-inside">
-            <li class="advantages-svg icon1">
-              <!-- <img class="" src="img/icon1.jpg" alt=""> -->
-            </li>
-            <li class="advantages-text">
-              <p class="">Идейные соображения высшего порядка, а&nbsp;также постоянный количественный рост</p>
-            </li>
-          </ul>
-        </li>
+      <div class="container">
+        <h2 class="h2-advantages">Преимущества</h2>
+        <ul class="advantages-block-ul">
 
-        <li class="advantages-block">
-          <ul class="advantages-block-inside">
-            <li class="advantages-svg icon2">
-              <!-- <img class="" src="img/icon2.jpg" alt=""> -->
-            </li>
-            <li class="advantages-text">
-              <p class="">Значимость этих проблем настолько очевидна, что вопрос остаётся открытым</p>
-            </li>
-          </ul>
-        </li>
+          <li class="advantages-block icon1">
+            <p class="advantages-block-a">
+              Идейные соображения высшего порядка, а&nbsp;также постоянный количественный рост
+            </p>
+          </li>
 
-        <li class="advantages-block">
-          <ul class="advantages-block-inside">
-            <li class="advantages-svg icon3">
-              <!-- <img class="" src="img/icon3.jpg" alt=""> -->
-            </li>
-            <li class="advantages-text">
-              <p class="">Таким образом реализация плановых заданий играет важную роль для понимания</p>
-            </li>
-          </ul>
-        </li>
+          <li class="advantages-block icon2">
+            <p class="advantages-block-a">
+              Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
+            </p>
+          </li>
 
-        <li class="advantages-block">
-          <ul class="advantages-block-inside">
-            <li class="advantages-svg icon4">
-              <!-- <img class="" src="img/icon4.jpg" alt=""> -->
-            </li>
-            <li class="advantages-text">
-              <p class="">Повседневная практика показывает, что сложившаяся структура организации</p>
-            </li>
-          </ul>
-        </li>
+          <li class="advantages-block icon3">
+            <p class="advantages-block-a">
+              Таким образом реализация плановых заданий играет важную роль для понимания
+            </p>
+          </li>
 
-        <li class="advantages-block">
-          <ul class="advantages-block-inside">
-            <li class="advantages-svg icon5">
-              <!-- <img class="" src="img/icon5.jpg" alt=""> -->
-            </li>
-            <li class="advantages-text">
-              <p class="">Равным образом рамки и&nbsp;место обучения кадров способствует подготовки сотрудника</p>
-            </li>
-          </ul>
-        </li>
+          <li class="advantages-block icon4">
+            <p class="advantages-block-a">
+              Повседневная практика показывает, что сложившаяся структура организации
+            </p>
+          </li>
 
-        <li class="advantages-block">
-          <ul class="advantages-block-inside">
-            <li class="advantages-svg icon6">
-              <!-- <img class="" src="img/icon6.jpg" alt=""> -->
-            </li>
-            <li class="advantages-text">
-              <p class="">Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего сервиса</p>
-            </li>
-          </ul>
-        </li>
+          <li class="advantages-block icon5">
+            <p class="advantages-block-a">
+              Равным образом рамки и&nbsp;место обучения кадров способствует подготовки сотрудника
+            </p>
+          </li>
 
-        <li class="advantages-block">
-          <ul class="advantages-block-inside">
-            <li class="advantages-svg icon7">
-              <!-- <img class="" src="img/icon7.jpg" alt=""> -->
-            </li>
-            <li class="advantages-text">
-              <p class="">Повседневная практика показывает, что дальнейшее развитие различных </p>
-            </li>
-          </ul>
-        </li>
+          <li class="advantages-block icon6">
+            <p class="advantages-block-a">
+              Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего сервиса
+            </p>
+          </li>
 
-        <li class="advantages-block">
-          <ul class="advantages-block-inside">
-            <li class="advantages-svg icon8">
-              <!-- <img class="" src="img/icon8.jpg" alt=""> -->
-            </li>
-            <li class="advantages-text">
-              <p class="">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
-            </li>
-          </ul>
-        </li>
+          <li class="advantages-block icon7">
+            <p class="advantages-block-a">
+              Повседневная практика показывает, что дальнейшее развитие различных
+            </p>
+          </li>
 
-      </ul>
+          <li class="advantages-block icon8">
+            <p class="advantages-block-a">
+              Значимость этого настолько очевидна, что консультация наших экспертов помогает
+            </p>
+          </li>
+
+        </ul>
+      </div>
     </section>
 
     <section id="accommodation">
-      <h2 class="h2-accommodation">Размещение</h2>
-      <ul class="container-accommodation-ul">
+      <div class="container">
+        <h2 class="h2-accommodation">Размещение</h2>
+        <ul class="container-accommodation-ul">
 
-        <!-- 1 -->
-        <li class="accommodation-li-block">
-          <ul class="accommodation-ul">
-            <li class="photo">
-              <img src="img/photo1.png" alt="Lagoona española">
-            </li>
-            <li class="accommodation-text">
-              <p class="accommodation-price">от <b>4 698 </b> / ночь</p>
-              <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 4 из 5">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star.jpg" alt="">
-            </li>
-            <li class="accommodation-text">
-              <p class="">Lagoona española</p>
-            </li>
-            <li class="accommodation-text">
+          <!-- 1 -->
+          <li class="accommodation-li-block">
+            <img src="img/photo1.png" alt="Lagoona española">
+
+            <div class="addomodation-div-block">
+              <p class="accommodation-price">
+                <span>
+                  от <b>4 698 </b> / ночь
+                </span>
+
+                <span>
+                  <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 4 из 5">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star.jpg" alt="">
+                </span>
+              </p>
+
+              <h3 class="accommodation-h3">Lagoona española</h3>
               <p class="">Барселона, Испания</p>
-            </li>
-            <li class="accommodation-text">
               <button class="button">Номера</button>
-            </li>
-          </ul>
-        </li>
+            </div>
+          </li>
 
-        <!-- 2 -->
-        <li class="accommodation-li-block">
-          <ul class="accommodation-ul">
-            <li class="photo">
-              <img src="img/photo2.png" alt="Lagoona son típicas">
-            </li>
-            <li class="accommodation-text">
-              <p class="accommodation-price">от <b>5 148</b> / ночь</p>
-              <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 4 из 5">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star.jpg" alt="">
-            </li>
-            <li class="accommodation-text">
-              <p class="">Lagoona son típicas</p>
-            </li>
-            <li class="accommodation-text">
+          <!-- 2 -->
+          <li class="accommodation-li-block">
+            <img src="img/photo2.png" alt="Lagoona son típicas">
+
+            <div class="addomodation-div-block">
+              <p class="accommodation-price">
+                <span>
+                  от <b>5 148</b> / ночь
+                </span>
+
+                <span>
+                  <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 4 из 5">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star.jpg" alt="">
+                </span>
+              </p>
+
+              <h3 class="accommodation-h3">Lagoona son típicas</h3>
               <p class="">Барселона, Испания</p>
-            </li>
-            <li class="accommodation-text">
               <button class="button">Номера</button>
-            </li>
-          </ul>
-        </li>
+            </div>
+          </li>
 
-        <!-- 3 -->
-        <li class="accommodation-li-block">
-          <ul class="accommodation-ul">
-            <li class="photo">
-              <img src="img/photo3.png" alt="Lagoona de la guerra">
-            </li>
-            <li class="accommodation-text">
-              <p class="accommodation-price">от <b>6 254</b> / ночь</p>
-              <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 5 из 5">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-            </li>
-            <li class="accommodation-text">
-              <p class="">Lagoona de la guerra</p>
-            </li>
-            <li class="accommodation-text">
+          <!-- 3 -->
+          <li class="accommodation-li-block">
+            <img src="img/photo3.png" alt="Lagoona de la guerra">
+
+            <div class="addomodation-div-block">
+              <p class="accommodation-price">
+                <span>
+                  от <b>6 254</b> / ночь
+                </span>
+                <span>
+                  <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 5 из 5">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                </span>
+              </p>
+
+              <h3 class="accommodation-h3accommodation-h3">Lagoona de la guerra</h3>
               <p class="">Барселона, Испания</p>
-            </li>
-            <li class="accommodation-text">
               <button class="button">Номера</button>
-            </li>
-          </ul>
-        </li>
+            </div>
+          </li>
 
-        <!-- 4 -->
-        <li class="accommodation-li-block">
-          <ul class="accommodation-ul">
-            <li class="photo">
-              <img src="img/photo4.png" alt="Lagoona mentira piadosa">
-            </li>
-            <li class="accommodation-text">
-              <p class="accommodation-price">от <b>6 320</b> / ночь</p>
-              <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 5 из 5">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-            </li>
-            <li class="accommodation-text">
-              <p class="">Lagoona mentira piadosa</p>
-            </li>
-            <li class="accommodation-text">
+          <!-- 4 -->
+          <li class="accommodation-li-block">
+            <img src="img/photo4.png" alt="Lagoona mentira piadosa">
+
+            <div class="addomodation-div-block">
+              <p class="accommodation-price">
+                <span>
+                  от <b>6 320</b> / ночь
+                </span>
+                <span>
+                  <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 5 из 5">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                </span>
+              </p>
+
+              <h3 class="accommodation-h3">Lagoona mentira piadosa</h3>
               <p class="">Барселона, Испания</p>
-            </li>
-            <li class="accommodation-text">
               <button class="button">Номера</button>
-            </li>
-          </ul>
-        </li>
+            </div>
+          </li>
 
-        <!-- 5 -->
-        <li class="accommodation-li-block">
-          <ul class="accommodation-ul">
-            <li class="photo">
-              <img src="img/photo5.png" alt="Lagoona empujar la creatividad">
-            </li>
-            <li class="accommodation-text">
-              <p class="accommodation-price">от <b>6 457</b> / ночь</p>
-              <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 4 из 5">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star.jpg" alt="">
-            </li>
-            <li class="accommodation-text">
-              <p class="">Lagoona empujar la creatividad</p>
-            </li>
-            <li class="accommodation-text">
+          <!-- 5 -->
+          <li class="accommodation-li-block">
+            <img src="img/photo5.png" alt="Lagoona empujar la creatividad">
+
+            <div class="addomodation-div-block">
+              <p class="accommodation-price">
+                <span>
+                  от <b>6 457</b> / ночь
+                </span>
+
+                <span>
+                  <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 4 из 5">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star.jpg" alt="">
+                </span>
+              </p>
+              <h3 class="accommodation-h3">Lagoona empujar la creatividad</h3>
               <p class="">Барселона, Испания</p>
-            </li>
-            <li class="accommodation-text">
               <button class="button">Номера</button>
-            </li>
-          </ul>
-        </li>
+            </div>
+          </li>
 
-        <!-- 6 -->
-        <li class="accommodation-li-block">
-          <ul class="accommodation-ul">
-            <li class="photo">
-              <img src="img/photo6.png" alt="Lagoona el retorno">
-            </li>
-            <li class="accommodation-text">
-              <p class="accommodation-price">от <b>6 320</b> / ночь</p>
-              <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 4 из 5">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star.jpg" alt="">
-            </li>
-            <li class="accommodation-text">
-              <p class="">Lagoona el retorno</p>
-            </li>
-            <li class="accommodation-text">
+          <!-- 6 -->
+          <li class="accommodation-li-block">
+            <img src="img/photo6.png" alt="Lagoona el retorno">
+
+            <div class="addomodation-div-block">
+              <p class="accommodation-price">
+                <span>
+                  от <b>6 320</b> / ночь
+                </span>
+
+                <span>
+                  <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 4 из 5">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star.jpg" alt="">
+                </span>
+              </p>
+
+              <h3 class="accommodation-h3">Lagoona el retorno</h3>
               <p class="">Барселона, Испания</p>
-            </li>
-            <li class="accommodation-text">
               <button class="button">Номера</button>
-            </li>
-          </ul>
-        </li>
+            </div>
+          </li>
 
-        <!-- 7 -->
-        <li class="accommodation-li-block">
-          <ul class="accommodation-ul">
-            <li class="photo">
-              <img src="img/photo7.png" alt="Lagoona mentira piadosa">
-            </li>
-            <li class="accommodation-text">
-              <p class="accommodation-price">от <b>6 505</b> / ночь</p>
-              <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 5 из 5">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-            </li>
-            <li class="accommodation-text">
-              <p class="">Lagoona mentira piadosa</p>
-            </li>
-            <li class="accommodation-text">
+          <!-- 7 -->
+          <li class="accommodation-li-block">
+            <img src="img/photo7.png" alt="Lagoona mentira piadosa">
+
+            <div class="addomodation-div-block">
+              <p class="accommodation-price">
+                <span>
+                  от <b>6 505</b> / ночь
+                </span>
+
+                <span>
+                  <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 5 из 5">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                </span>
+              </p>
+
+              <h3 class="accommodation-h3">Lagoona mentira piadosa</h3>
               <p class="">Барселона, Испания</p>
-            </li>
-            <li class="accommodation-text">
               <button class="button">Номера</button>
-            </li>
-          </ul>
-        </li>
+            </div>
+          </li>
 
-        <!-- 8 -->
-        <li class="accommodation-li-block">
-          <ul class="accommodation-ul">
-            <li class="photo">
-              <img src="img/photo8.png" alt="Lagoona suerte siguió siempre">
-            </li>
-            <li class="accommodation-text">
-              <p class="accommodation-price">от <b>6 824</b> / ночь</p>
-              <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 4 из 5">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star1.jpg" alt="">
-              <img src="img/star.jpg" alt="">
-            </li>
-            <li class="accommodation-text">
-              <p class="">Lagoona suerte siguió siempre</p>
-            </li>
-            <li class="accommodation-text">
+          <!-- 8 -->
+          <li class="accommodation-li-block">
+            <img src="img/photo8.png" alt="Lagoona suerte siguió siempre">
+
+            <div class="addomodation-div-block">
+              <p class="accommodation-price">
+                <span>
+                  от <b>6 824</b> / ночь
+                </span>
+
+                <span>
+                  <img class="accommodation-star" src="img/star1.jpg" alt="Рейтинг 4 из 5">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star1.jpg" alt="">
+                  <img src="img/star.jpg" alt="">
+                </span>
+              </p>
+
+              <h3 id="accommodation-h3">Lagoona suerte siguió siempre</h3>
               <p class="">Барселона, Испания</p>
-            </li>
-            <li class="accommodation-text">
               <button class="button">Номера</button>
-            </li>
-          </ul>
-        </li>
+            </div>
+          </li>
 
-        <!-- 9 -->
-        <li class="accommodation-li-block">
-          <ul class="">
-            <li class="">
-              <img class="accommodation-big-img" src="img/photo9group.png" alt="">
-            </li>
-            <li class="accommodation-big-text">
-              <p class="accommodation-big-text-a">Посмотреть все варианты</p>
-            </li>
-          </ul>
-        </li>
+          <!-- 9 -->
+          <li class="accommodation-li-block flex-block">
+             <!-- <img class="accommodation-big-img flex-img" src="img/photo9group.png" alt=""> -->
 
-      </ul>
+              <a href="#" class="accommodation-big-text-a flex-a">
+                Посмотреть все варианты
+                <svg class="svg-angel-bracket" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.778175 1.22183L8.55635 9L0.778175 16.7782" stroke="white" stroke-width="2" />
+                </svg>
+              </a>
+
+          </li>
+
+        </ul>
+      </div>
     </section>
 
     <section class="check-boxes">
-      <h2 class="h2-check-boxes">Хочу тур</h2>
+      <div class="container check-boxes-div">
+        <h2 class="h2-check-boxes check-boxes-place">Хочу тур</h2>
 
-      <form action="formdata" method="post" name="form1">
-        <h2 class="list1">Город вылета</h2>
-        <p><select name="list1">
-            <option value="1">Санкт-Петербург</option>
-            <option value="2">Москва</option>
-            <option value="3">Белгород</option>
-            <option value="4">Ставрополь</option>
-            <option value="5">Пермь</option>
-          </select></p>
+        <form class="formdata" action="formdata" method="post" name="form1">
+          <div class="formdata-div-city">
+          <h2 class="list1">Город вылета</h2>
+          <p class="list1-p">
+            <select class="select-list1" name="list1">
+              <option value="1">Санкт-Петербург</option>
+              <option value="2">Москва</option>
+              <option value="3">Белгород</option>
+              <option value="4">Ставрополь</option>
+              <option value="5">Пермь</option>
+            </select></p>
+          </div>
 
-        <h2 class="list1">Страна</h2>
-        <p><select name="list1">
-            <option value="1">Австралия</option>
-            <option value="2">Испания</option>
-            <option value="3">Италия</option>
-            <option value="4">Украина</option>
-            <option value="5">Финляндия</option>
-          </select></p>
+          <div class="formdata-div-country">
+          <h2 class="list1">Страна</h2>
+          <p class="list1-p">
+            <select class="select-list1" name="list1">
+              <option value="1">Австралия</option>
+              <option value="2">Испания</option>
+              <option value="3">Италия</option>
+              <option value="4">Украина</option>
+              <option value="5">Финляндия</option>
+            </select></p>
+          </div>
 
-        <h2 class="list1">Ночной</h2>
-        <p><select name="list1">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select></p>
+          <div class="formdata-div-date">
+            <p class="date list1-p">Дата прибытия
+              <input class="input-date" type="date" name="calendar" value="2021-10-18" max="2122-10-18" min="2022-10-18">
 
-        <h2 class="list1">Туристы </h2>
-        <p><select name="list1">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select></p>
+            </p>
+            </div>
 
-        <h2 class="date">Дата прибытия </h2>
-        <input type="date" name="calendar" value="18.10.2021" max="18-10-3021" min="18-10-2022">
-        <p><input type="submit" value="Найти"></p>
-      </form>
+          <div class="formdata-div-night">
+          <h2 class="list1">Ночной</h2>
+          <p class="list1-p">
+            <select class="select-list1" name="list1">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select></p>
+          </div>
+
+          <div class="formdata-div-turist">
+          <h2 class="list1">Туристы </h2>
+          <p class="list1-p">
+            <select class="select-list1" name="list1">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select></p>
+          </div>
+
+          <input class="check-boxes-input list1-p button" type="submit" value="Найти">
+
+
+
+        </form>
+      </div>
     </section>
 
     <section id="contacts" class="contacts">
