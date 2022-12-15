@@ -21,7 +21,7 @@
         </div>
 
         <div class="arrow-personal-area">
-          <a class="personal-area" href="personal-area">
+          <a class="personal-area" href="personal-area" target="_blank">
 
             <svg class="personal-img" id="arrow-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@
             <li class="nav-menu-list-item"><a class="menu" href="#contacts">Контакты</a></li>
           </ul>
 
-          <button id="tour" class="button-tour button">
+          <button class="button-tour button" form="tour">
             <span>Хочу тур</span>
           </button>
 
@@ -473,20 +473,24 @@
       </div>
     </section>
 
-    <section class="check-boxes">
-      <div class="container check-boxes-div">
-        <h2 class="h2-check-boxes font-style-h check-boxes-place">Хочу тур</h2>
+    <section class="selectors">
+      <div class="container selector-div">
+        <h2 class="h2-selector font-style-h selector-place">Хочу тур</h2>
 
-        <form class="formdata" action="formdata" method="post" name="form1">
+        <form id="tour" class="formdata" action="https://jsonplaceholder.typicode.com/posts" method="post" name="form1" required>
           <div class="formdata-div-city">
             <h2 class="list1">Город вылета</h2>
             <p class="list1-p">
               <select class="select-list1" name="list1">
                 <option value="1">Санкт-Петербург</option>
-                <option value="2">Москва</option>
-                <option value="3">Белгород</option>
-                <option value="4">Ставрополь</option>
-                <option value="5">Пермь</option>
+                <option value="2">Саранск</option>
+                <option value="3">Саратов</option>
+                <option value="4">Селенгинск</option>
+                <option value="5">Северодвинск</option>
+                <option value="6">Сочи</option>
+                <option value="7">Ставрополь</option>
+                <option value="8">Сызрань</option>
+                <option value="9">Сыктывкар</option>
               </select>
             </p>
           </div>
@@ -496,10 +500,14 @@
             <p class="list1-p">
               <select class="select-list1" name="list1">
                 <option value="1">Австралия</option>
-                <option value="2">Испания</option>
-                <option value="3">Италия</option>
-                <option value="4">Украина</option>
-                <option value="5">Финляндия</option>
+                <option value="2">Австрия</option>
+                <option value="3">Азербайджан</option>
+                <option value="4">Албания</option>
+                <option value="5">Англия</option>
+                <option value="6">Аргентина</option>
+                <option value="7">Армения</option>
+                <option value="8">Белоруссия</option>
+                <option value="9">Бельгия</option>
               </select>
             </p>
           </div>
@@ -515,7 +523,7 @@
           <div class="formdata-div-night">
             <h2 class="list1">Ночной</h2>
             <p class="list1-p">
-              <select class="select-list1" name="list1">
+              <select class="select-list1 select-list" name="list1">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -533,7 +541,7 @@
           <div class="formdata-div-turist">
             <h2 class="list1">Туристы </h2>
             <p class="list1-p">
-              <select class="select-list1" name="list1">
+              <select class="select-list1 select-list" name="list1">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -548,9 +556,7 @@
             </p>
           </div>
 
-          <input class="check-boxes-input list1-p button" type="submit" value="Найти">
-
-
+          <input class="selector-input list1-p button" type="submit" value="Найти">
 
         </form>
       </div>
@@ -562,32 +568,47 @@
 
         <address class="contacts-address">
           <ul class="contacts-list">
-            <li class="contacts-item">
-              <strong class="contacts-item-caption">Адрес
-              </strong>
-              <p class="contacts-item-text">
-                Москва, улица Юности, дом 5 строение 4, офис 2
-              </p>
+
+            <li class="contacts-list-flex">
+              <ul>
+              <li class="contacts-item">
+                <strong class="contacts-item-caption">Адрес
+                </strong>
+                <div class="contacts-item-div">
+                  <p class="contacts-item-text">
+                    Москва, улица Юности, дом 5 строение 4, офис 2
+                  </p>
+                </div>
+              </li>
+              <li class="contacts-item">
+                <strong class="contacts-item-caption">Телефоны
+                </strong>
+                <div class="contacts-item-div">
+                  <a class="contacts-item-link" href="tel:+74995356434">+7 499 535-64-34</a>
+                  <a class="contacts-item-link" href="tel:+74950050544">+7 495 005-05-44</a>
+                </div>
+              </li>
+              <li class="contacts-item">
+                <strong class="contacts-item-caption">Email
+                </strong>
+                <div class="contacts-item-div">
+                  <a class="contacts-item-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                  <p class="contacts-item-link-p">по вопросам бронирования</p>
+                  <a class="contacts-item-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                  <p class="contacts-item-link-p">по вопросам сотрудничества</p>
+                </div>
+              </li>
+              <li class="contacts-item">
+                <strong class="contacts-item-caption">График
+                </strong>
+                <div class="contacts-item-div">
+                  <p class="contacts-item-text-p">
+                    Понедельник-пятница, с 10:00 до 19:00</p>
+                </div>
+              </li>
+              </ul>
             </li>
             <li class="contacts-item">
-              <strong class="contacts-item-caption">Телефоны
-              </strong>
-              <a class="contacts-item-link" href="tel:+74995356434">+7 499 535-64-34</a>
-              <a class="contacts-item-link" href="tel:+74950050544">+7 495 005-05-44</a>
-            </li>
-            <li class="contacts-item">
-              <strong class="contacts-item-caption">Email
-              </strong>
-              <a class="contacts-item-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
-              <p class="contacts-item-link-p">по вопросам бронирования</p>
-              <a class="contacts-item-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
-              <p class="contacts-item-link-p">по вопросам сотрудничества</p>
-            </li>
-            <li class="contacts-item">
-              <strong class="contacts-item-caption">График
-              </strong>
-              <p class="contacts-item-text-p">
-                Понедельник-пятница, с 10:00 до 19:00</p>
               <button class="contacts-item-text-b button button-route">
                 Построить маршрут
               </button>
@@ -621,8 +642,9 @@
 
       <div class="footer-center-container">
         <address class="footer-address">
-          <div class="footer-center">
-            <span class="footer-center">11710, улица Юности, дом 5 строение 4, офис 2</span>
+          <div class="footer-center footer-center-style">
+            <span class="footer-center footer-center-style">11710, улица Юности, дом 5 строение 4, офис 2
+            </span>
             <a class="footer-item-link" href="tel:+74995356434">+7 499 535-64-34</a>
             <a class="footer-item-link" href="tel:+74950050544">+7 495 005-05-44</a>
           </div>
@@ -635,15 +657,15 @@
       <div class="footer-right">
         <ul class="social">
           <li class="social-item">
-            <a href="https://www.tripadvisor.ru/Hotels" class="social-link social-link-tw"><img class="footer-img-link"
+            <a href="https://www.tripadvisor.ru/Hotels" class="social-link social-link-tw" target="_blank"><img class="footer-img-link"
                 src="img/link--treep.svg" alt="TripAdvisor"> </a>
           </li>
           <li class="social-item">
-            <a href="https://ok.ru/" class="social-link social-link-linkedin"><img class="footer-img-link"
+            <a href="https://ok.ru/" class="social-link social-link-linkedin" target="_blank"><img class="footer-img-link"
                 src="img/link-ok.svg" alt="OK"> </a>
           </li>
           <li class="social-item">
-            <a href="https://vk.com/" class="social-link social-link-mail"><img class="footer-img-link"
+            <a href="https://vk.com/" class="social-link social-link-mail" target="_blank"><img class="footer-img-link"
                 src="img/link--vk.svg" alt="VK"> </a>
           </li>
         </ul>
